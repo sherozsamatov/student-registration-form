@@ -37,13 +37,13 @@
                     <h2>Student Info</h2>
                     <div class="form-group">
                         <label for="name">Full Name <sup>*</sup></label>
-                        <input type="text" id="name" name="Name" placeholder="First and Last Name (Cyrillic)" required minlength="3" maxlength="30" autofocus autocomplete="off">
+                        <input type="text" id="name" name="studentName" placeholder="First and Last Name (Cyrillic)" required minlength="3" maxlength="30" autofocus autocomplete="off">
                     </div>
 
                     <!-- Phone number -->
                     <div class="form-group">
                         <label for="phone">Phone Number <sup>*</label>
-                        <input type="tel" id="phone" name="Phone" placeholder="Phone Number (without ' + ')" required>
+                        <input type="tel" id="phone" name="studentPhone" placeholder="Phone Number (without ' + ')" required>
                     </div>
 
                     <!-- Year of birth -->
@@ -95,7 +95,7 @@
                     <!-- Type -->
                     <div class="form-group">
                         <label for="type">Type</label>
-                        <select name="Type" id="type">
+                        <select name="callType" id="type">
                             <option value="Walk-in">Walk-in</option>
                             <option value="Phone">Phone</option>
                         </select>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="form-group">
                         <label for="remarks">Remarks</label>
-                        <textarea name="Remarks" id="remarks" placeholder="Save any special requirements here..."></textarea>
+                        <textarea name="specialRemarks" id="remarks" placeholder="Save any special requirements here..."></textarea>
                     </div>
                 </section>
 
