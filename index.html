@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    
+    <!-- Milligram CSS Local -->
+    <!-- <link rel="stylesheet" href="milligram.css"> -->
+    
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="center">
+        <div class="form">
+            <div class="header">
+                <img src="nextgen-logo.png" alt="">
+                <h1>Nextgen Student Registration</h1>
+            </div>
+            <form action="" method="POST">
+
+                <!-- Sudent Info -->
+                <section class="student-info">
+
+                    <!-- Full name -->
+                    <h2>Student Info</h2>
+                    <div class="form-group">
+                        <label for="name">Full Name <sup>*</sup></label>
+                        <input type="text" id="name" name="Name" placeholder="First and Last Name (Cyrillic)" required minlength="3" maxlength="30" autofocus autocomplete="off">
+                    </div>
+
+                    <!-- Phone number -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number <sup>*</label>
+                        <input type="tel" id="phone" name="Phone" placeholder="Phone Number (without ' + ')" required>
+                    </div>
+
+                    <!-- Year of birth -->
+                    <div class="form-group">
+                        <label for="birthYear">Year of birth</label>
+                        <input type="number" name="yearOfBirth" id="birthYear" min="1900" max="2100" placeholder="Year of birth">
+                    </div>
+                </section>
+
+                <!-- Course info-->
+                <section class="course-info">
+                    <h2>Course info</h2>
+                    <div class="form-group">
+                        <label for="course">Course <sup>*</sup></label>
+                        <select name="courseName" id="course" required>
+                            <option disabled selected hidden>Choose course</option>
+                            <option value="Python Foundations">Python Foundations</option>
+                            <option value="Frontend Development">Frontend Development</option>
+                            <option value="Backend Development">Backend Development</option>
+                            <option value="Computer Literacy">Computer Literacy</option>
+                        </select>
+                    </div>
+                    <!-- Preferred days and time -->
+                    <div class="form-group">
+                        <label for="days">Preferred Days </label>
+                        <select name="preferredDays" id="days">
+                            <option value="вт,чт,сб">вт / чт / сб</option>
+                            <option value="пн,ср,пт" selected>пн / ср / пт</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time </label>
+                        <select name="preferredTime" id="time">
+                            <option value="Morning">Morning</option>
+                            <option value="Afternoon" selected>Afternoon</option>
+                            <option value="Evening">Evening</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Other Info -->
+                <section class="other-info">
+                    <h2>Other Info</h2>
+                    <!-- Call / Visit Date -->
+                    <div class="form-group">
+                        <label for="date">Call / Visit date</label>
+                        <input type="date" name="visitDate" id="date">
+                    </div>
+                    <!-- Type -->
+                    <div class="form-group">
+                        <label for="type">Type</label>
+                        <select name="Type" id="type">
+                            <option value="Walk-in">Walk-in</option>
+                            <option value="Phone">Phone</option>
+                        </select>
+                    </div>
+                    <!-- How did you hear about us? -->
+                    <div class="form-group">
+                        <label for="marketing">How did you hear about us?</label>
+                        <select name="heardFrom" id="marketing">
+                            <option value="Word of mouth">Word of mouth</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="remarks">Remarks</label>
+                        <textarea name="Remarks" id="remarks" placeholder="Save any special requirements here..."></textarea>
+                    </div>
+                </section>
+
+                <div class="buttons">
+                    <button class="button" type="submit">Register</button>
+                    <button class="button" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
