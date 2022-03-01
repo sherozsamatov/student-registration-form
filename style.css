@@ -39,7 +39,7 @@ sup {
 	display: flex;
 	align-items: center;
 	margin-bottom: 2rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .header img {
@@ -69,8 +69,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	background-color: #14c585;
 	border: 0.1rem solid #14c585;
 	border-radius: 0.4rem;
@@ -125,6 +124,7 @@ select:focus {
 	.student-info,
 	.course-info {
 		flex-basis: 45%;
+        flex-grow: 1;
 	}
 
 	.buttons,
@@ -132,13 +132,4 @@ select:focus {
 		flex-basis: 100%;
 		flex-grow: 1;
 	}
-}
-
-
-@media screen and (max-width: 480px) {
-
-.header {
-    flex-wrap: wrap;
-}
-
 }
